@@ -1,0 +1,279 @@
+*{ 
+	margin: 0;
+	padding: 0;
+}
+	ul{ margin: 0;
+		padding: 0;
+		list-style: none;
+	} 
+	a{ text-decoration: none;
+	}
+
+	body {
+		background: url(img/bg-body.png) no-repeat 50% 0; 
+		
+	   
+	}
+	
+
+	
+
+	          
+                   /* HEADER for class wrapper BEGIN*/
+
+  header {
+  	background: #0c1819;
+  	height: 70px;
+
+  }
+
+  header h1 {
+
+  	float: left;
+  }
+
+header h2 {
+
+float: left;
+margin: 5px 0 0 367px;
+}
+
+header h3 {
+
+	float: right;
+	margin: 27px 16px 0 0;
+}
+
+
+
+
+
+
+
+                   /* HEADER for class wrapper END*/
+
+
+                   /* FOOTER for class wrapper BEGIN*/
+
+.SteamAuth {
+	clear: left;
+	float: left;
+	position: relative;
+    font-size: 26px;
+    margin: 0 0 0 490px;
+    left: 277px;
+    color: white;
+
+}
+
+
+   h4 {	clear: left;}
+   h4 p{    
+    float: left;
+    font-size: 26px;
+    margin: 0 0 0 490px;
+    color: #fff;
+	}
+
+    .content {position: relative; }
+
+nav {
+float: left;
+clear: left;
+margin: 0 0 0 477px;
+}
+        
+        li {
+        	float: right;
+        	margin: 5px 4px 33px 25px;
+        }      
+
+nav li a{
+color: #0dcacc;
+
+}
+
+                   /* FOOTER for class wrapper END*/
+
+                   /* Hero animated BEGIN*/
+
+#hero {
+width: 250px;
+height: 358px;
+position: relative;
+margin: 5px 0 0 442px;
+
+}
+
+@keyframes hero-stance {
+ from {
+ 	top:0;
+ }
+ to {
+ 	top:-10px;
+ }
+
+}
+
+#hero .stance {
+	margin: 67px 0 0 0;
+	visibility: hidden;
+	background: url(img/herofront_nocape.png);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	animation-name: hero-stance;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-io-out;
+}
+
+#hero .attack {
+	margin: 67px 0 0 0;
+	visibility: hidden;
+	background: url(img/heroright_nocape.png);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+}
+
+#hero.idle .stance {
+
+	visibility: visible;
+}
+
+#hero.attack .attack  {
+
+	visibility: visible;
+	top: -30px;
+}
+
+@keyframes shadow {
+	from {
+		width: 250px;
+	}
+	to {
+		width: 225px;
+		left: 12.5px;
+	}
+}
+
+#hero .shadow {
+
+	background: url(img/heroshadow.png);
+	width: 250px;
+	height: 84px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: absolute;
+	left: 0;
+	bottom: -110px;
+	z-index: 1;
+	animation-name: shadow;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-io-out;
+}
+
+#hero.attack .shadow {
+	animation-name: none;
+	width: 225px;
+	left: 12.5px;
+}
+
+#hero .textA {
+     color: white;
+     font-size: 26px;
+     left: 77px;
+     margin: 74px 0px 0px 290px;
+     position: absolute;
+    width: 4322px;
+}
+
+@keyframes laser {
+	from {
+		width: 203px
+	}
+	to {
+		width: 768px;
+	}
+}
+#hero .laser {
+     background: rgba(0, 0, 0, 0) url("img/beam.png") no-repeat scroll 0% 0% / 100% 100%;
+     height: 50px;
+     left: 145px;
+     position: absolute;
+     top: 27px;
+     width: 203px;
+     animation-name: laser;
+	 animation-duration: 3s;
+	 animation-iteration-count: infinite;
+	 animation-timing-function: linear;
+}
+
+#hero .laser::after {
+	content: " ";
+	width: 4px;
+	height: 100%;
+	right: 0;
+	top: 1px;
+	background-color: #ffe500;
+	position: absolute;
+	border-radius: 3px;
+	box-shadow: 0 0 10px 3px #ffe500;
+}
+                   /* Hero animated END*/
+
+
+                   /* Что касается help.html НАЧАЛО*/
+
+h5 {
+
+	clear: left;
+	
+
+}
+
+
+h5 p{
+    
+    float: left;
+    font-size: 26px;
+    margin: 0 0 22px 611px;
+    color: #fff;
+    background: url(img/fStep1.png) no-repeat;
+	
+
+}
+
+h5 ul li a{
+	color: #fff;
+	font-size: 20px;
+}
+
+h5 ul li {
+	float: left;
+	margin: 56px 0 0 0;
+}
+
+                   /* Что касается help.html КОНЕЦ*/
+
+
+
+                   /* Видео clay НАЧАЛО*/
+     #trailer > video {
+
+min-width: 100%; 
+min-height: 100%;
+width: 1280px; height: 720px; 
+    }               
+                   
+                   /* Видео clay КОНЕЦ*/
